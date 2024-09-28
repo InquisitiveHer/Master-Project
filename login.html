@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+<head>
+<title> log in page</title>
+</head>
+<script language="javascript">
+function master()
+{
+       if(document.login.user.value=="career" && document.login.pass.value=="password")
+{
+window.open("file:///C:/Users/DIKSHA%20JHA/OneDrive/Desktop/html/New%20folder/master.html");
+}
+else
+{
+       alert("Invalid user I'd and password");
+}
+}
+function reset()
+{
+document.login.user.value="";
+document.login.pass.value="";
+}
+</script>
+<body background="C:\Users\DIKSHA JHA\Downloads\DIGITAL BLOOMS JANUARY 2017 _ FREE DESKTOP WALLPAPERS - JustineCelina.jpg">
+<form name="login"
+<center><table border="0" width="300" height="200">
+<tr>
+<th colspan="2"><p><h1>LOGIN PAGE </th></h1></p><br></tr>
+<td><h4>Enter User Id</td><td><input type="text" name="user"></td></h4><br></tr>
+<td><h4>Enter Password</td><td><input type="password" name="pass"></td></h4></tr>
+<td colspan="2"><input type="button" value="Reset" onclick="reset()">
+<input type="button" value="Log in" onclick="master()"></td></tr>
+</table>
+</body>
+</html>

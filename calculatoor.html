@@ -1,0 +1,72 @@
+<html>
+<head>
+<title> calculator </title>
+</head>
+<script language=""javascript">
+function abcd()
+{
+ var a,b,c;
+
+a=parseInt(document.qw.fno.value);
+b=parseInt(document.qw.sno.value);
+c=a+b;
+
+document.qw.rno.value=c;
+}
+function fff()
+{
+var a,b,d;
+
+a=parseInt(document.qw.fno.value);
+b=parseInt(document.qw.sno.value);
+d=a-b;
+
+document.qw.rno.value=d;
+
+}
+function www()
+{
+var a,b,e;
+
+a=parseInt(document.qw.fno.value);
+b=parseInt(document.qw.sno.value);
+e=a*b;
+
+document.qw.rno.value=e;
+
+}
+function eee()
+{
+var a,b,f;
+
+a=parseInt(document.qw.fno.value);
+b=parseInt(document.qw.sno.value);
+f=a/b;
+
+document.qw.rno.value=f;
+
+}
+function hom()
+{
+window.open("file:///C:/Users/DIKSHA%20JHA/OneDrive/Desktop/html/New%20folder/master.html");
+}
+</script>
+
+<body background="C:\Users\DIKSHA JHA\OneDrive\Desktop\Pictures\calcu.jpg">
+<form name="qw">
+<center><table border="0"width="380" height="300">
+<tr>
+<td colspan="2"><p><center><h1>Calculator</h1></p></td>
+<tr>
+<th>Enter a number</th><td><input type="text" name="fno"></td></tr><br>
+<th>Enter second number</th><td><input type="text" name="sno"></td></tr><br>
+<th>Result</th><td><input type="text" name="rno"></td></tr><br>
+<td colspan="2"><input type="button" value="Addition" onclick="abcd()">
+<input type="button" value="subtraction" onclick="fff()">
+<input type="button" value="Multiplication" onclick="www()">
+<input type="button" value="Division" onclick="eee()">
+<input type="button" value="Home" onclick="hom()"></td></tr>
+
+</form>
+</body>
+</html>

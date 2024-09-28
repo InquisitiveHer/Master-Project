@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>EMPLOYEE DETAILS</title>
+</head>
+<script language="javascript">
+
+function hom()
+{
+window.open("file:///C:/Users/DIKSHA%20JHA/OneDrive/Desktop/html/New%20folder/master.html");
+}
+
+function calculate()
+{
+var p;
+p=parseInt(document.detail.txt.value);
+var n,m;
+n=parseInt(document.detail.tt.value);
+m=p*n/100;
+document.detail.tl.value=m;
+
+var q,r;
+q=parseInt(document.detail.tr.value);
+r=p*q/100;
+document.detail.tm.value=r;
+
+var a,b;
+a=parseInt(document.detail.ttl.value);
+b=p*a/100;
+document.detail.ts.value=b;
+var k;
+k=m+r+b+p;
+document.detail.sal.value=k;
+
+var c,d;
+c=parseInt(document.detail.tg.value);
+d=k*c/100;
+document.detail.tx.value=d;
+var j;
+j=k-d;
+document.detail.amt.value=j;
+}
+function cl()
+{
+document.detail.tm.value="";
+document.detail.tl.value="";
+document.detail.ts.value="";
+document.detail.sal.value="";
+document.detail.tx.value="";
+document.detail.amt.value="";
+document.detail.txt.value="";
+document.detail.tt.value="";
+document.detail.tr.value="";
+document.detail.ttl.value="";
+document.detail.tg.value="";
+}
+
+</script>
+
+<body background="C:\Users\DIKSHA JHA\Downloads\Beige Background Fresh H5.jpeg">
+<form name="detail">
+<center><table border="0" height="50px" width="1000px"
+<tr>
+<td colspan="2" align="center" style="color:purple; font-size:30";><b><h1>EMPLOYEE DETAILS</b></h1></td>
+</tr>
+</table>
+<table border="0" width="1000px" height="400px">
+<tr>
+<td><h4>Employee Id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::<input type="text" name="id" value="" style="width:220px"></h4></td>
+<td rowspan="3"><img src="C:\Users\DIKSHA JHA\Downloads\Premium Vector _ Office workers celebrating success.jpeg"height="150" width="340"></td>
+</tr>
+<tr>
+<td><h4>Employee Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::<input type="text" name="pinki" value="" style="width:220px"></h4></td>
+</tr>
+<tr>
+<td><h4>Employee Salary &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::<input type="text" name="txt" value="" style="width:220px"></h4></td>
+</tr>
+<tr>
+<td><h4>TA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::<input type="text" name="tl" value="" style="width:220px" readonly="true"></h4></td>
+<td  align="center"><input type="text" name="tt">%</td>
+</tr>
+<tr>
+<td><h4>DA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ::<input type="text" name="tm" value="" style="width:220px" readonly="true"></h4></td>
+<td  align="center"><input type="text" name="tr">%</td>
+</tr>
+<tr>
+<td><h4>HRA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::<input type="text" name="ts" value="" style="width:220px" readonly="true"></h4>
+</td>
+<td align="center"><input type="text" name="ttl">%</td>
+</tr>
+<tr>
+<td><h4>Gross Salary &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::<input type="text" name="sal" value="" style="width:220px" readonly="true"></h4></td>
+<td></td>
+</tr>
+<tr>
+<td><h4>Tax &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::<input type="text" name="tx" value="" style="width:220px" readonly="true"></h4></td>
+<td align="center"><input type="text" name="tg" value="" max="2">%</td>
+</tr>
+<tr>
+<td><h4>Net Salary &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::<input type="text" name="amt" value="" style="width:220px" readonly="true"></h4></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="image"image"img src="C:\Users\DIKSHA JHA\Downloads\images-removebg-preview.png" height="60px" width="60px" value="Home" onclick="hom()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Calculate" onclick="calculate()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="image"image"img src="C:\Users\DIKSHA JHA\Downloads\download-removebg-preview.png" height="60px" width="60px"value="Clear" onclick="cl()"></td>
+</tr>
+</table></center>
+</form>
+<marquee><p><h1>Designed and Developed By CHANDA</h1></p></marquee>
+</body>
+</html>

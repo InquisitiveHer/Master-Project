@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>beauty parlour</title>
+</head>
+<script language="javascript">
+function check()
+{
+var val=0;
+if(document.hair.makeup.checked==true)
+{
+val=val+500;
+}
+if(document.hair.cure.checked==true)
+{
+val=val+200;
+}
+if(document.hair.over.checked==true)
+{
+val=val+600;
+}
+if(document.hair.styling.checked==true)
+{
+val=val+300;
+}
+if(document.hair.discount[0].checked==true){
+val=val-(val*0.2);
+}
+if(document.hair.discount[1].checked==true){
+val=val-(val*0.1);
+}
+if(document.hair.discount[2].checked==true){
+val=val-(val*0.05);
+}
+document.hair.tot.value = val;
+}
+function reset(){
+window.open(" ");
+}
+function exit(){
+window.close("");
+}
+function homi()
+{
+window.open("file:///C:/Users/DIKSHA%20JHA/OneDrive/Desktop/html/New%20folder/master.html");
+}
+</script>
+<body background="C:\Users\DIKSHA JHA\Downloads\texture_.jpeg">
+<form name="hair">
+<center><table border="0" align="center" width="400" height="70">
+<tr>
+<td style="color:white"><h1>BEAUTY PARLOUR</h1>
+</tr>
+</center></table>
+<table border="0" align="center" width="800" height="300">
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td style="color:cyan"><h3>Customer Name::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="shop1" value="" style="width:250px;"></h3></td>
+<td></td>
+</tr>
+<tr>
+<td style="color:cyan" width="650"><h3>Customer Type::</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="checkbox"/>Special 
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox"/>General  
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="checkbox"/> New</td>
+<td rowspan="2"><img src="C:\Users\DIKSHA JHA\Downloads\c938f7c5-6959-45ab-82d2-a449218e5d93.jpeg"height="200" width="200"</td>
+</tr>
+<tr>
+<td style="color:cyan"><h3>Charges Details::</h3>
+         <align="center"><input type="checkbox" name="makeup" onclick="check();">Makeup(500/-)
+            <align="center"><input type="checkbox" name="cure" onclick="check();">manicure pedicure(200/-)
+            <align="center"><input type="checkbox" name="over" onclick="check();">Waxing(600/-)
+<align="center"><input type="checkbox" name="styling" onclick="check();">Hair cut(300/-)</td>
+
+</tr>
+<tr>
+<td style="color:cyan"><h3>Discount Details::</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="discount" onclick="check();"> 20% Discount
+<input type="radio" name="discount" onclick="check();"> 10% Discount 
+<input type="radio" name="discount" onclick="check();">5%Discount</td>
+<td rowspan="2"><marquee><img src="C:\Users\DIKSHA JHA\Downloads\Cosmetics Photography PNG - Free Download.jpeg"" height="260" width="300" />
+<img src="C:\Users\DIKSHA JHA\Downloads\c4f7ef3f-8223-4a4c-9d08-83b1b9fa07a7.jpeg" height="260" width="300"/><img src="C:\Users\DIKSHA JHA\Downloads\The Keep.jpeg" height="260" width="300"/></marquee></td>
+</tr>
+<tr>
+<td style="color:cyan"><h3>Total Price In Rs::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="tot" value="" style="width:250px;"></h3></td>
+</tr>
+<tr>
+<td align="center"><input type="button" value="Exit" onclick="exit()">
+                <input type="button" value="Reset" onclick="reset()">
+                <input type="button" value="Home" onclick="homi()">
+</td>
+<td></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

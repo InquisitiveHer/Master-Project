@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>hotel manage</title>
+</head>
+<script language="javascript">
+function check()
+{
+var val=0, r;
+r=parseInt(document.Hotel.fair.value);
+if(document.Hotel.parking.checked==true)
+{
+val=val+500;
+}
+if(document.Hotel.Pool.checked==true){
+val=val+1000;
+}
+if(document.Hotel.fooding.checked==true){
+ val=val+1000;
+}
+if(document.Hotel.AC.checked==true){
+val=val+700;
+}
+document.Hotel.ttl.value=r+val;
+}
+function reset(){
+window.open("");
+}
+function Exit(){
+window.close("file:///C:/Users/DIKSHA%20JHA/OneDrive/Desktop/html/New%20folder/master.html");
+}
+function Print(){
+window.print("");
+}
+function hom(){
+window.open("file:///C:/Users/DIKSHA%20JHA/OneDrive/Desktop/html/New%20folder/master.html");
+}
+</script>
+<body background="C:\Users\DIKSHA JHA\Downloads\HD wallpaper_ antique photography of Eiffel tower, Paris, France, city, architecture.jpeg">
+<form name="Hotel">
+<center><table border="0" width="900" height="500">
+<tr>
+<td colspan="2"><h1 align="center"><u>HOTEL PROJECT</u></h1></td>
+</tr>
+<tr>
+<td><h3>Customer Name &nbsp;&nbsp;&nbsp;&nbsp;::<input type="text" name="textid" value=""></h3></td>
+<td rowspan="2"><h3>Add on Facility:</h3><input type="checkbox" name="parking" onclick="check();"><b>Parking(500/-)</b></h3><br/>
+<input type="checkbox" name="Pool" onclick="check();"><b>Pool Access(1000/-)</b><br/>
+<input type="checkbox" name="fooding" onclick="check();"><b>Fooding(1000/-)</b><br/>
+<input type="checkbox" name="AC" onclick="check();"><b>AC(700/-)</b></td>
+<tr>
+<td><h3>Contact No.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::<input type="password" name="pswd" value=""></h3></td>
+</tr>
+<tr>
+<td><h3>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::<input type="email" name="eml" value=""></h3></td>
+</tr>
+<tr>
+<td><h3>Roombase Fair &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::<input type="text" name="fair" value=""></h3></td>
+<td><h3>Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::<input type="text" name="ttl" value=""></h3></td>
+<td></td>
+</tr>
+<tr align="center">
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="button" value="Home" onclick="hom()">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="button" value="Exit" onclick="Exit()">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="button" value="Reset" onclick="reset()">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="button" value="Print" onclick="Print()"></td>
+<td></td>
+</tr>
+</table></center>
+</form>
+</body>
+</html>

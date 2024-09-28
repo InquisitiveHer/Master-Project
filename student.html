@@ -1,0 +1,52 @@
+<!Doctype html>
+<html>
+<head>
+<title>STUDENT PROJECT</title>
+</head>
+<script language="javascript">
+function abcd()
+{
+ var a,b,c;
+
+a=parseInt(document.qw.cfee.value);
+b=parseInt(document.qw.dis.value);
+c=a-(a*b*0.01);
+document.qw.new.value=c;
+}
+function home()
+{
+window.open("file:///C:/Users/DIKSHA%20JHA/OneDrive/Desktop/html/New%20folder/master.html");
+}
+function cle()
+{
+document.qw.cfee.value="";
+document.qw.dis.value="";
+document.qw.new.value="";
+document.qw.sid.value="";
+document.qw.sname.value="";
+}
+</script>
+<body background="C:\Users\DIKSHA JHA\Downloads\photo-1497864149936-d3163f0c0f4b.avif">
+<form name="qw">
+<center>
+<table border="0" width="600" height="300">
+<tr>
+<td colspan="2" style="color:white"><center><h1><big><u>STUDENT DETAILS</u></big></h1></center></td>
+</tr>
+<tr>
+<th style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student Id</th><td><input type="text"name="sid"></td></tr><br>
+<th style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student Name</th><td><input type="text" name="sname"></td></tr><br>
+<th style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Course Fee</th><td><input type="text" name="cfee"></td></tr><br>
+<th style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discount%</th><td><input type="text" name="dis"></td></tr><br>
+<th style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Course Fee</th><td><input type="text" name="new"></td></tr><br>
+</tr>
+<tr>
+<td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Home" onclick="home()">
+<input type="button" value="Calculate" onclick="abcd()">
+<input type="button" value="Clear" onclick="cle();"></td>
+</tr>
+</form>
+</center>
+</table>
+</body>
+</html>
